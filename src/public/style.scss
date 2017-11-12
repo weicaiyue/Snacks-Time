@@ -20,9 +20,11 @@ a{
 	margin: 0 auto;
 	position:fixed;
 	z-index:100;
+	top:0;
 	img{
 	    width: 100%;height:auto;
 		display: block;
+		
 	}
 }
 #snacks{
@@ -134,6 +136,16 @@ a{
 		}
 	}
 }
+.car-cover {
+  background: #000;
+  opacity: .3;
+  position: fixed;
+  z-index: 4;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 .carDisp{
     position: fixed;
 	width: 100%;height:20%;
@@ -174,10 +186,10 @@ a{
 	}	
 }
 .car-open-enter-active{
-	transition:all 1s ease;
+	transition:all .8s ease;
 }
 .car-open-leave-active{
-	transition:all 1s ease;
+	transition:all .8s ease;
 }
 
 .car-open-enter,.car-open-leave-to{
@@ -193,92 +205,6 @@ a{
     	fill: #111;
     }
 }
-.modal {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    width: 65%;
-    height: auto;
-    -webkit-transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%);
-    z-index: 201;
-    .modal-inner{
-    	background-color:#fff;
-    	padding: 2rem 2rem;
-    }
-}
-.content{
-    position:relative;
-}
-.bgimg{
-	width:100%;
-	opacity:0.4;
-	img{
-		max-width: 100%;height:auto;
-	}
-}
-.confirm-tips {
-    width: 100%;
-    background-color:transparent;
-    position:absolute;
-    top:8%;
-}
-.confirm-tips, .modal{
-    text-align: center;
-}
-.open-modal-enter-active{
-	transition: all .8s ease-out;
-}
-.open-modal-leave-active{
-	transition: all .8s ease-out;
-}
-.open-modal-enter,.open-modal-leave-to{
-	transform: translateY(20%);
-	opacity:0;
-}
-
-.btn-wrap {
-	width:100%;
-    margin-top: 1rem;
-    text-align: center;
-    font-size: 0;
-    background-color:transparent;
-    .btn{
-    	width: 45%;margin: 0 2.5%;
-    }
-}
-.close {
-    position: absolute;
-    top: 7px;
-    right: 7px;
-    width: 34px;
-    height: 34px;
-    -webkit-transform: scale(0.5);
-    -ms-transform: scale(0.5);
-    transform: scale(0.5);
-    text-indent: -8000px;
-}
-.close:before {
-    -webkit-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-}
-.close:before,.close:after {
-    position: absolute;
-    top: 16px;
-    left: -4px;
-    content: "";
-    width: 44px;
-    height: 3px;
-    background: #605f5f;
-}
-.close:after {
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-}
-
 .overlay {
     position: fixed;
     top: 0;
